@@ -1,0 +1,47 @@
+.toolbar-container {
+  width: 300px;
+  margin-top: -50px;
+  margin-left: auto;
+  margin-right: auto;
+  .toolbar-menu {
+    display: inline-block;
+    color: white;
+    font-family: Roboto;
+    border-radius: 18px;
+    margin-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 80px;
+    text-align: center;
+    .price {
+      height: 20px;
+      padding: 10px;
+      opacity: 0.5;
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: white;
+      border-radius: 24px;
+      margin-bottom: 5px;
+    }
+
+    &.red {
+      background-color: rgba(166, 38, 27, 1);
+      &:hover {
+        background-color: rgba(166, 38, 27, 0.7);
+      }
+    }
+    &.yellow {
+      background-color: rgba(237, 184, 97, 1);
+      &:hover {
+        background-color: rgba(237, 184, 97, 0.7);
+      }
+    }
+    &.green {
+      background-color: rgba(99, 162, 95, 1);
+      &:hover {
+        background-color: rgba(99, 162, 95, 0.7);
+      }
+    }
+  }
+}
