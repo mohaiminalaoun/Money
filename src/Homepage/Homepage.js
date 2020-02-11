@@ -2,6 +2,7 @@ import React from "react";
 import "./Homepage.scss";
 import HomepageHeader from "./HomepageHeader";
 import HomepageToolbar from "./HomepageToolbar";
+import ExpensesGrid from "../Grids/ExpensesGrid";
 
 class Homepage extends React.Component {
   render() {
@@ -11,6 +12,7 @@ class Homepage extends React.Component {
           <HomepageHeader />
         </div>
         <HomepageToolbar />
+        <ExpensesGrid />
       </>
     );
   }

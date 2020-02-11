@@ -1,0 +1,42 @@
+.expenses-grid-ctr {
+  overflow-y: scroll;
+  font-family: Roboto;
+  height: 35vh;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 8px;
+  .row {
+    border: 1px solid rgba(183, 183, 183, 0.1);
+    border-radius: 4px;
+    padding: 8px;
+    .attribute {
+    }
+    .metric {
+      float: right;
+    }
+    .date {
+      font-size: 8pt;
+      opacity: 0.5;
+    }
+    .time {
+      font-size: 8pt;
+      opacity: 0.5;
+      margin-right: 12px;
+    }
+  }
+}
+
+.expenses-header {
+  padding-left: 30px;
+  font-family: Roboto;
+  font-size: 18pt;
+}
+
+.see-all {
+  float: right;
+  padding-right: 30px;
+  font-family: Roboto;
+  font-size: 12pt;
+  margin-top: 4px;
+  color: #a6261b;
+}
