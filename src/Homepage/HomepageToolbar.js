@@ -3,10 +3,10 @@ import price from "../assets/price.svg";
 import more from "../assets/more.svg";
 import "./HomepageToolbar.scss";
 
-const HomepageToolbar = () => {
+const HomepageToolbar = props => {
   return (
     <div className="toolbar-container">
-      <div className="toolbar-menu yellow">
+      <div onClick={props.goToAddExpensePg} className="toolbar-menu yellow">
         <img className="price" alt="" src={price} />
         Top Up
       </div>

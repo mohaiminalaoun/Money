@@ -4,18 +4,16 @@ import HomepageHeader from "./HomepageHeader";
 import HomepageToolbar from "./HomepageToolbar";
 import ExpensesGrid from "../Grids/ExpensesGrid";
 
-class Homepage extends React.Component {
-  render() {
-    return (
-      <>
-        <div className="homepage">
-          <HomepageHeader />
-        </div>
-        <HomepageToolbar />
-        <ExpensesGrid />
-      </>
-    );
-  }
-}
+const Homepage = props => {
+  return (
+    <>
+      <div className="homepage">
+        <HomepageHeader />
+      </div>
+      <HomepageToolbar goToAddExpensePg={props.goToAddExpensePg} />
+      <ExpensesGrid />
+    </>
+  );
+};
 
 export default Homepage;
