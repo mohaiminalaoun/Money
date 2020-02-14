@@ -19,6 +19,7 @@ const CalendarComponent = props => {
   return (
     <>
       <div className="calendarContainer" style={style}>
+        <span className="cal-header">How often?</span>
         <div
           className="nextBtn"
           onClick={() => {

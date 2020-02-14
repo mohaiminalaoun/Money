@@ -23,9 +23,7 @@ const NumericInput = props => {
     }
   };
   const submit = () => {
-    console.log("submitting");
     props.setAmount(amount);
-    console.log(props.goNext());
   };
   return (
     <div className="numInputCtr">

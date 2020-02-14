@@ -3,6 +3,7 @@ import "./ConfirmationPage.scss";
 const ConfirmationPage = props => {
   return (
     <div className="confirmation-page">
+      <span className="confirm-title">Confirm expense</span>
       <div className="confirmation-header">{`You've set an expense of $${props.amount} for the following dates`}</div>
       <div className="confirmation-container">
         {props.selDates.map(d => (
