@@ -1,4 +1,5 @@
 import React from "react";
+import backspace from "../assets/backspace.svg";
 import { useState } from "react";
 import "./NumericInput.scss";
 
@@ -23,6 +24,7 @@ const NumericInput = props => {
   };
   const submit = () => {
     console.log("submitting");
+    props.setAmount(amount);
     console.log(props.goNext());
   };
   return (
@@ -67,11 +69,23 @@ const NumericInput = props => {
         </div>
         <div className="row">
           {[".", 0, "<="].map(num => {
-            return (
-              <div value={num} key={num} onClick={click} className="num">
-                {num}
-              </div>
-            );
+            if (num !== "<=") {
+              return (
+                <div value={num} key={num} onClick={click} className="num">
+                  {num}
+                </div>
+              );
+            } else {
+              return (
+                <img
+                  className="num"
+                  onClick={click}
+                  key={num}
+                  value={num}
+                  src={backspace}
+                />
+              );
+            }
           })}
         </div>
       </div>

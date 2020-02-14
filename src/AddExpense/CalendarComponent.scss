@@ -1,0 +1,29 @@
+.Cal__Header__root {
+  background-color: #edb861 !important;
+  font-size: 14pt !important;
+}
+
+.Cal__Header__dateWrapper.Cal__Header__day.Cal__Header__active {
+  font-size: 14pt;
+}
+
+.Cal__Weekdays__day {
+  background-color: #ec972a;
+}
+
+.nextBtn {
+  background-color: #a6261b;
+  border-radius: 12px;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3), 0 5px 8px rgba(0, 0, 0, 0.24);
+  color: white;
+  font-size: 18pt;
+  float: right;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 4px;
+  margin-bottom: 5px;
+  opacity: 0.8;
+  padding: 4px;
+  text-align: center;
+  width: 40px;
+}

@@ -25,11 +25,18 @@ class App extends React.Component {
       addExpensePage: true
     });
   };
+
+  returnToHomePage = () => {
+    this.setState({
+      homepage: true,
+      addExpensePage: false
+    });
+  };
   render() {
     if (this.state.homepage) {
       return <Homepage goToAddExpensePg={this.goToAddExpensePg} />;
     } else if (this.state.addExpensePage) {
-      return <AddExpense />;
+      return <AddExpense returnToHomePage={this.returnToHomePage} />;
     } else {
       return <LandingPage loginFn={this.login} />;
     }
