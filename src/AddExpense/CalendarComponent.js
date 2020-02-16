@@ -16,6 +16,10 @@ const CalendarComponent = props => {
   let datesObj = {};
   datesObj[today.toLocaleDateString()] = true; // set selected date in the array initially
 
+  let parentDiv = document.getElementsByClassName("addexpense-container");
+  let w = parentDiv[0].style.width;
+  console.log("w is " + window.screen.width);
+
   return (
     <>
       <div className="calendarContainer" style={style}>
@@ -36,7 +40,7 @@ const CalendarComponent = props => {
         <InfiniteCalendar
           Component={withMultipleDates(Calendar)}
           interpolateSelection={defaultMultipleDateInterpolation}
-          width={window.screen.width}
+          width={window.screen.width / 2}
           height={300}
           selected={[today.toLocaleDateString()]}
           onSelect={date => {

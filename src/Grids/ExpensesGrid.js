@@ -15,7 +15,7 @@ const ExpensesGrid = () => {
   }, []); // second argument as [] calls useEffect only on componentDidMount
   const firstThirty = expenses && expenses.slice && expenses.slice(0, 30);
   return (
-    <>
+    <div className="expenses-container">
       <div style={headerStyle}>
         <span className="expenses-header">Expenses</span>
         <span className="see-all">See All</span>
@@ -35,7 +35,7 @@ const ExpensesGrid = () => {
             );
           })}
       </div>
-    </>
+    </div>
   );
 };
 

@@ -9,8 +9,9 @@ const Homepage = props => {
     <>
       <div className="homepage">
         <HomepageHeader />
+        <HomepageToolbar goToAddExpensePg={props.goToAddExpensePg} />
       </div>
-      <HomepageToolbar goToAddExpensePg={props.goToAddExpensePg} />
+
       <ExpensesGrid />
     </>
   );

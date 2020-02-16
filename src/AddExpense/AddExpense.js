@@ -3,6 +3,7 @@ import AddExpenseHeader from "./AddExpenseHeader";
 import NumericInput from "./NumericInput";
 import CalendarComponent from "./CalendarComponent";
 import ConfirmationPage from "./ConfirmationPage";
+import "./AddExpense.scss";
 import { useState } from "react";
 
 const AddExpense = props => {
@@ -10,16 +11,23 @@ const AddExpense = props => {
   const [amount, setAmount] = useState(0);
   const [selDates, setSelDates] = useState([]);
   return (
-    <>
+    <div className="addexpense-container">
       <AddExpenseHeader
         stage={stage}
         goBack={() => {
-          if (stage == 0) return;
+          if (stage === 0) {
+            props.returnToHomePage();
+          }
           return setStage(stage - 1);
         }}
       />
       {stage === 0 ? (
-        <NumericInput setAmount={setAmount} goNext={() => setStage(1)} />
+        <NumericInput
+          setAmount={setAmount}
+          goNext={() => {
+            setStage(1);
+          }}
+        />
       ) : null}
       {stage === 1 ? (
         <CalendarComponent
@@ -35,7 +43,7 @@ const AddExpense = props => {
           amount={amount}
         />
       ) : null}
-    </>
+    </div>
   );
 };
 

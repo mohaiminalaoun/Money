@@ -24,6 +24,7 @@ const NumericInput = props => {
   };
   const submit = () => {
     props.setAmount(amount);
+    props.goNext();
   };
   return (
     <div className="numInputCtr">
@@ -78,6 +79,7 @@ const NumericInput = props => {
                 <img
                   className="num"
                   onClick={click}
+                  alt="back"
                   key={num}
                   value={num}
                   src={backspace}

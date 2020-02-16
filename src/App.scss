@@ -6,6 +6,8 @@
   text-align: center;
   background-color: #fbf7ef;
   height: 100vh;
+  width: 100vw;
+  overflow: hidden; // don't want it scrollable
   font-family: Roboto;
 
   .title-container {
@@ -72,4 +74,20 @@
 @font-face {
   font-family: "Roboto-Thin";
   src: local("Roboto-Thin"), url(./fonts/Roboto-Thin.ttf) format("truetype");
+}
+
+@media screen and (min-width: 800px) {
+  #root {
+    display: flex;
+  }
+  .homepage {
+    display: inline-block;
+    width: 50vw;
+    height: 100vh !important;
+  }
+  .expenses-container {
+    display: inline-block;
+    width: 50vw;
+    height: 100vh !important;
+  }
 }

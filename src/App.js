@@ -2,6 +2,9 @@ import React from "react";
 import "./App.scss";
 import LandingPage from "./LandingPage";
 import Homepage from "./Homepage/Homepage";
+import HomepageHeader from "./Homepage/HomepageHeader";
+import HomepageToolbar from "./Homepage/HomepageToolbar";
+import ExpensesGrid from "./Grids/ExpensesGrid";
 import AddExpense from "./AddExpense/AddExpense";
 
 class App extends React.Component {
@@ -33,10 +36,27 @@ class App extends React.Component {
     });
   };
   render() {
+    let isWideScreen = window.screen.width > 800;
     if (this.state.homepage) {
-      return <Homepage goToAddExpensePg={this.goToAddExpensePg} />;
+      return (
+        <>
+          <div className="homepage">
+            <HomepageHeader />
+            <HomepageToolbar goToAddExpensePg={this.goToAddExpensePg} />
+          </div>
+          <ExpensesGrid />
+        </>
+      );
     } else if (this.state.addExpensePage) {
-      return <AddExpense returnToHomePage={this.returnToHomePage} />;
+      return (
+        <>
+          <div className="homepage">
+            <HomepageHeader />
+            <HomepageToolbar goToAddExpensePg={this.goToAddExpensePg} />
+          </div>
+          <AddExpense returnToHomePage={this.returnToHomePage} />
+        </>
+      );
     } else {
       return <LandingPage loginFn={this.login} />;
     }

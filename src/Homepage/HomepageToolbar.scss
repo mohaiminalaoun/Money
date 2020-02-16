@@ -1,6 +1,6 @@
 .toolbar-container {
   width: 300px;
-  margin-top: -50px;
+  /*  margin-top: -50px; */
   margin-left: auto;
   margin-right: auto;
   .toolbar-menu {
@@ -43,5 +43,11 @@
         background-color: rgba(99, 162, 95, 0.7);
       }
     }
+  }
+}
+
+@media screen and (max-height: 570px) {
+  .toolbar-container {
+    transform: scale(0.7);
   }
 }
