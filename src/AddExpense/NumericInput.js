@@ -26,7 +26,8 @@ const NumericInput = props => {
     props.setAmount(amount);
     props.goNext();
   };
-  return (
+
+  const NumPad = (
     <div className="numInputCtr">
       <div className="header">Amount</div>
 
@@ -91,6 +92,46 @@ const NumericInput = props => {
       </div>
     </div>
   );
+
+  const OrderForm = (
+    <div className="numInputCtr">
+      <div className="order-form">
+        <div className="tab">
+          <div className="tab-option">
+            <h3 className="tab-span">Buy FB</h3>
+          </div>
+          <div className="tab-option">
+            <h3 className="tab-span">Sell FB</h3>
+          </div>
+        </div>
+        <div className="first-section">
+          <div className="row">
+            Shares
+            <input className="input" placeholder="0"></input>
+          </div>
+          <div className="row market-price">
+            Market Price
+            <div className="value">$214.18</div>
+          </div>
+          <div className="row">
+            Estimated Cost
+            <div className="value">$214.18</div>
+          </div>
+        </div>
+        <div className="btn-container">
+          <div className="review-order-btn" onClick={props.goNext}>
+            Review Order
+          </div>
+        </div>
+        <div className="buying-power">$32.18 Buying Power Available</div>
+        <div className="additional-info">
+          You’re on the Fractional Shares waitlist with 1472930 other people.
+        </div>
+      </div>
+    </div>
+  );
+  let isMobile = window.screen.width < 800;
+  return isMobile ? NumPad : OrderForm;
 };
 
 export default NumericInput;

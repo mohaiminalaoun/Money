@@ -36,7 +36,6 @@ class App extends React.Component {
     });
   };
   render() {
-    let isWideScreen = window.screen.width > 800;
     if (this.state.homepage) {
       return (
         <>
