@@ -5,6 +5,8 @@ import "./ExpensesGrid.scss";
 const ExpensesGrid = () => {
   const headerStyle = { marginTop: "14px" };
   const [expenses, setExpenses] = useState({});
+  const [seeAll, setSeeAll] = useState(false);
+  const gridViewStyle = seeAll ? { height: "70vh" } : null;
   useEffect(() => {
     async function fetchData() {
       const res = await fetch("../mockData/expenses.json");
@@ -16,11 +18,13 @@ const ExpensesGrid = () => {
   const firstThirty = expenses && expenses.slice && expenses.slice(0, 30);
   return (
     <div className="expenses-container">
-      <div style={headerStyle}>
+      <div className="header-ctr" style={headerStyle}>
         <span className="expenses-header">Expenses</span>
-        <span className="see-all">See All</span>
+        <span className="see-all" onClick={() => setSeeAll(!seeAll)}>
+          {!seeAll ? "See All" : "Minimize"}
+        </span>
       </div>
-      <div className="expenses-grid-ctr">
+      <div className="expenses-grid-ctr" style={gridViewStyle}>
         {firstThirty &&
           firstThirty.map(it => {
             return (

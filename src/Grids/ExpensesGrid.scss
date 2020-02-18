@@ -1,13 +1,26 @@
 .expenses-container {
   height: 50vh;
   margin-top: 50px;
+  .header-ctr {
+    margin-left: 30px;
+    margin-right: 30px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.01),
+      0 -1px 6px rgba(0, 0, 0, 0.6);
+    padding-bottom: 4px;
+    padding-top: 4px;
+    background-color: #fbf7ef;
+  }
   .expenses-grid-ctr {
     overflow-y: scroll;
     font-family: Roboto;
     height: 35vh;
-    padding-left: 30px;
-    padding-right: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
     margin-top: 8px;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.01), 0 10px 24px rgba(0, 0, 0, 0.6);
+
     .row {
       border: 1px solid rgba(183, 183, 183, 0.1);
       border-radius: 4px;
@@ -42,5 +55,6 @@
     font-size: 12pt;
     margin-top: 4px;
     color: #a6261b;
+    cursor: pointer;
   }
 }

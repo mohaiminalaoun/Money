@@ -8,11 +8,11 @@ const HomepageToolbar = props => {
     <div className="toolbar-container">
       <div onClick={props.goToAddExpensePg} className="toolbar-menu yellow">
         <img className="price" alt="" src={price} />
-        Top Up
+        Add
       </div>
-      <div className="toolbar-menu red">
+      <div onClick={props.goToStocks} className="toolbar-menu red">
         <img className="price" alt="" src={price} />
-        Send
+        Invest
       </div>
       <div className="toolbar-menu green">
         <img className="price" alt="" src={more} />

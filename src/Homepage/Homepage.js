@@ -9,7 +9,10 @@ const Homepage = props => {
     <>
       <div className="homepage">
         <HomepageHeader />
-        <HomepageToolbar goToAddExpensePg={props.goToAddExpensePg} />
+        <HomepageToolbar
+          goToAddExpensePg={props.goToAddExpensePg}
+          goToStocks={props.goToStocks}
+        />
       </div>
 
       <ExpensesGrid />

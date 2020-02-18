@@ -98,15 +98,15 @@ const NumericInput = props => {
       <div className="order-form">
         <div className="tab">
           <div className="tab-option">
-            <h3 className="tab-span">Buy FB</h3>
+            <h3 className="tab-span">Expense</h3>
           </div>
           <div className="tab-option">
-            <h3 className="tab-span">Sell FB</h3>
+            <h3 className="tab-span">Income</h3>
           </div>
         </div>
         <div className="first-section">
           <div className="row">
-            Shares
+            Unit Price
             <input className="input" placeholder="0"></input>
           </div>
           <div className="row market-price">
@@ -123,7 +123,7 @@ const NumericInput = props => {
             Review Order
           </div>
         </div>
-        <div className="buying-power">$32.18 Buying Power Available</div>
+        <div className="buying-power">$32.18 Buying Credit Available</div>
         <div className="additional-info">
           You’re on the Fractional Shares waitlist with 1472930 other people.
         </div>

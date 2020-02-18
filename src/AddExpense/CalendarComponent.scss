@@ -10,27 +10,64 @@
 .Cal__Weekdays__day {
   background-color: #ec972a;
 }
+
+.Cal__Container__root {
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.01), 0 12px 24px rgba(0, 0, 0, 0.6) !important;
+}
 .calendarContainer {
-  .cal-header {
-    font-size: 18pt;
-    line-height: 50px;
-    padding: 20px;
+  margin-left: 20px;
+  max-width: 500px;
+
+  .frequency {
     font-family: Roboto;
+    width: 100%;
+    margin-bottom: 10px;
+    cursor: pointer;
+    .onetime {
+      padding: 20px;
+      box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3), 0 5px 8px rgba(0, 0, 0, 0.24);
+      border: 1px solid lightgrey;
+      border-radius: 12px;
+    }
+    .recurring {
+      padding: 20px;
+      box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3), 0 5px 8px rgba(0, 0, 0, 0.24);
+      border: 1px solid lightgrey;
+      border-radius: 12px;
+      margin-top: 10px;
+    }
+    .selected {
+      background-color: #edb861 !important;
+      color: white;
+    }
+    input {
+      margin-right: 8px;
+    }
+  }
+
+  .cal-header {
+    line-height: 50px;
+    padding-left: 20px;
+    font-family: Roboto;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3), 0 5px 8px rgba(0, 0, 0, 0.24);
+    margin-bottom: 8px;
   }
   .nextBtn {
     background-color: #a6261b;
-    border-radius: 12px;
-    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3), 0 5px 8px rgba(0, 0, 0, 0.24);
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.24);
     color: white;
     font-size: 18pt;
+    font-family: Roboto-Thin;
     float: right;
     height: 40px;
     line-height: 40px;
-    margin-right: 4px;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
     opacity: 0.8;
     padding: 4px;
     text-align: center;
     width: 40px;
+    cursor: pointer;
   }
 }

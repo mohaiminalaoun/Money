@@ -6,13 +6,15 @@ import HomepageHeader from "./Homepage/HomepageHeader";
 import HomepageToolbar from "./Homepage/HomepageToolbar";
 import ExpensesGrid from "./Grids/ExpensesGrid";
 import AddExpense from "./AddExpense/AddExpense";
+import StocksComponent from "./Stocks/StocksComponent";
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       loggedin: false,
-      homepage: false
+      homepage: false,
+      stocks: false
     };
   }
   login = () => {
@@ -35,13 +37,26 @@ class App extends React.Component {
       addExpensePage: false
     });
   };
+
+  goToStocks = () => {
+    console.log("go to stocks");
+    this.setState({
+      homepage: false,
+      addExpensePage: false,
+      stocks: true
+    });
+  };
   render() {
     if (this.state.homepage) {
+      console.log(1);
       return (
         <>
           <div className="homepage">
             <HomepageHeader />
-            <HomepageToolbar goToAddExpensePg={this.goToAddExpensePg} />
+            <HomepageToolbar
+              goToAddExpensePg={this.goToAddExpensePg}
+              goToStocks={this.goToStocks}
+            />
           </div>
           <ExpensesGrid />
         </>
@@ -51,9 +66,25 @@ class App extends React.Component {
         <>
           <div className="homepage">
             <HomepageHeader />
-            <HomepageToolbar goToAddExpensePg={this.goToAddExpensePg} />
+            <HomepageToolbar
+              goToAddExpensePg={this.goToAddExpensePg}
+              goToStocks={this.goToStocks}
+            />
           </div>
           <AddExpense returnToHomePage={this.returnToHomePage} />
+        </>
+      );
+    } else if (this.state.stocks) {
+      return (
+        <>
+          <div className="homepage">
+            <HomepageHeader />
+            <HomepageToolbar
+              goToAddExpensePg={this.goToAddExpensePg}
+              goToStocks={this.goToStocks}
+            />
+          </div>
+          <StocksComponent />
         </>
       );
     } else {
