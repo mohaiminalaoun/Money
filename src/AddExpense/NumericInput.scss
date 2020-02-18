@@ -44,7 +44,9 @@
     overflow: scroll;
   }
   .keypad {
-    margin-top: 40%;
+    position: absolute;
+    bottom: 0px;
+    width: 90vw;
 
     .row {
       display: flex;

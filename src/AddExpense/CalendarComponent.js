@@ -17,8 +17,12 @@ const CalendarComponent = props => {
   let w = parentDiv[0].style.width;
   console.log("w is " + window.screen.width);
   let headerStyle = {
-    width: window.screen.width / 4 - 20 + "px"
+    width:
+      window.screen.width > 700
+        ? window.screen.width / 4 - 20 + "px"
+        : window.screen.width - 55 + "px"
   };
+  console.log(headerStyle);
 
   return (
     <>
@@ -39,22 +43,28 @@ const CalendarComponent = props => {
             {">"}
           </div>
         </h3>
-        <div className="frequency" style={headerStyle}>
-          <div className="onetime selected">
-            <input type="radio" />
-            One time
-          </div>
+        {window.screen.width > 700 ? (
+          <div className="frequency" style={headerStyle}>
+            <div className="onetime selected">
+              <input type="radio" />
+              One time
+            </div>
 
-          <div className="recurring">
-            <input type="radio" />
-            Recurring
+            <div className="recurring">
+              <input type="radio" />
+              Recurring
+            </div>
           </div>
-        </div>
+        ) : null}
 
         <InfiniteCalendar
           Component={withMultipleDates(Calendar)}
           interpolateSelection={defaultMultipleDateInterpolation}
-          width={window.screen.width / 4}
+          width={
+            window.screen.width > 700
+              ? window.screen.width / 4
+              : window.screen.width - 35
+          }
           height={300}
           selected={[today.toLocaleDateString()]}
           onSelect={date => {

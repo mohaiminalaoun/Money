@@ -64,13 +64,15 @@ class App extends React.Component {
     } else if (this.state.addExpensePage) {
       return (
         <>
-          <div className="homepage">
-            <HomepageHeader />
-            <HomepageToolbar
-              goToAddExpensePg={this.goToAddExpensePg}
-              goToStocks={this.goToStocks}
-            />
-          </div>
+          {window.screen.width > 800 ? (
+            <div className="homepage">
+              <HomepageHeader />
+              <HomepageToolbar
+                goToAddExpensePg={this.goToAddExpensePg}
+                goToStocks={this.goToStocks}
+              />
+            </div>
+          ) : null}
           <AddExpense returnToHomePage={this.returnToHomePage} />
         </>
       );

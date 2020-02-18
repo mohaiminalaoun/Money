@@ -1,8 +1,13 @@
 import React from "react";
 import "./ConfirmationPage.scss";
 const ConfirmationPage = props => {
+  const widthStyle =
+    window.screen.width < 600
+      ? { width: window.screen.width - 40 + "px" }
+      : null;
+  const btnWidthStyle = window.screen.width < 600 ? { width: "30%" } : null;
   return (
-    <div className="confirmation-page">
+    <div className="confirmation-page" style={widthStyle}>
       <h3 className="confirm-title">Confirm expense</h3>
       <div className="confirmation-header">{`You've set an expense of $${props.amount} for the following dates`}</div>
       <div className="confirmation-container">
@@ -18,10 +23,18 @@ const ConfirmationPage = props => {
       </div>
 
       <div className="btn-container">
-        <div className="btn cancel" onClick={props.returnToHomePage}>
+        <div
+          className="btn cancel"
+          style={btnWidthStyle}
+          onClick={props.returnToHomePage}
+        >
           Cancel
         </div>
-        <div className="btn confirm" onClick={props.returnToHomePage}>
+        <div
+          className="btn confirm"
+          style={btnWidthStyle}
+          onClick={props.returnToHomePage}
+        >
           Confirm
         </div>
       </div>
