@@ -7,6 +7,7 @@ import HomepageToolbar from "./Homepage/HomepageToolbar";
 import ExpensesGrid from "./Grids/ExpensesGrid";
 import AddExpense from "./AddExpense/AddExpense";
 import StocksComponent from "./Stocks/StocksComponent";
+import Calendar from "./CalendarPlanner/Calendar.js";
 
 class App extends React.Component {
   constructor(props) {
@@ -14,7 +15,8 @@ class App extends React.Component {
     this.state = {
       loggedin: false,
       homepage: false,
-      stocks: false
+      stocks: false,
+      calendar: false
     };
   }
   login = () => {
@@ -43,7 +45,17 @@ class App extends React.Component {
     this.setState({
       homepage: false,
       addExpensePage: false,
-      stocks: true
+      stocks: true,
+      calendar: false
+    });
+  };
+  goToCalendar = () => {
+    console.log("go to calendar");
+    this.setState({
+      homepage: false,
+      addExpensePage: false,
+      stocks: false,
+      calendar: true
     });
   };
   render() {
@@ -56,6 +68,7 @@ class App extends React.Component {
             <HomepageToolbar
               goToAddExpensePg={this.goToAddExpensePg}
               goToStocks={this.goToStocks}
+              goToCalendar={this.goToCalendar}
             />
           </div>
           <ExpensesGrid />
@@ -70,6 +83,7 @@ class App extends React.Component {
               <HomepageToolbar
                 goToAddExpensePg={this.goToAddExpensePg}
                 goToStocks={this.goToStocks}
+                goToCalendar={this.goToCalendar}
               />
             </div>
           ) : null}
@@ -84,9 +98,28 @@ class App extends React.Component {
             <HomepageToolbar
               goToAddExpensePg={this.goToAddExpensePg}
               goToStocks={this.goToStocks}
+              goToCalendar={this.goToCalendar}
             />
           </div>
           <StocksComponent />
+        </>
+      );
+    } else if (this.state.calendar) {
+      return (
+        <>
+          {window.screen.width > 800 ? (
+            <div className="homepage">
+              <HomepageHeader />
+              <HomepageToolbar
+                goToAddExpensePg={this.goToAddExpensePg}
+                goToStocks={this.goToStocks}
+                goToCalendar={this.goToCalendar}
+              />
+            </div>
+          ) : null}
+          <Calendar
+            width={window.screen.width < 800 ? window.screen.width / 7 : null}
+          />
         </>
       );
     } else {

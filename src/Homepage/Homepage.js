@@ -12,6 +12,7 @@ const Homepage = props => {
         <HomepageToolbar
           goToAddExpensePg={props.goToAddExpensePg}
           goToStocks={props.goToStocks}
+          goToCalendar={props.goToCalendar}
         />
       </div>
 
