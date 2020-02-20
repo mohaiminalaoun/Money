@@ -2,6 +2,7 @@ import React from "react";
 import backspace from "../assets/backspace.svg";
 import { useState } from "react";
 import "./NumericInput.scss";
+import OrderForm from "./OrderForm";
 
 const NumericInput = props => {
   let [amount, setAmount] = useState("0");
@@ -93,45 +94,8 @@ const NumericInput = props => {
     </div>
   );
 
-  const OrderForm = (
-    <div className="numInputCtr">
-      <div className="order-form">
-        <div className="tab">
-          <div className="tab-option">
-            <h3 className="tab-span">Expense</h3>
-          </div>
-          <div className="tab-option">
-            <h3 className="tab-span">Income</h3>
-          </div>
-        </div>
-        <div className="first-section">
-          <div className="row">
-            Unit Price
-            <input className="input" placeholder="0"></input>
-          </div>
-          <div className="row market-price">
-            Market Price
-            <div className="value">$214.18</div>
-          </div>
-          <div className="row">
-            Estimated Cost
-            <div className="value">$214.18</div>
-          </div>
-        </div>
-        <div className="btn-container">
-          <div className="review-order-btn" onClick={props.goNext}>
-            Review Order
-          </div>
-        </div>
-        <div className="buying-power">$32.18 Buying Credit Available</div>
-        <div className="additional-info">
-          You’re on the Fractional Shares waitlist with 1472930 other people.
-        </div>
-      </div>
-    </div>
-  );
   let isMobile = window.screen.width < 800;
-  return isMobile ? NumPad : OrderForm;
+  return isMobile ? NumPad : <OrderForm goNext={props.goNext} />;
 };
 
 export default NumericInput;

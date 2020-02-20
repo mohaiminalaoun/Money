@@ -24,7 +24,11 @@ const AddExpense = props => {
       {stage === 0 ? (
         <NumericInput
           setAmount={setAmount}
-          goNext={() => {
+          goNext={amt => {
+            if (amt) {
+              // param will exist when called from order form
+              setAmount(amt);
+            }
             setStage(1);
           }}
         />
