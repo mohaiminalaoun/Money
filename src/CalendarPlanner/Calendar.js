@@ -53,7 +53,7 @@ const Calendar = props => {
   let rows = Month.map(r => (
     <div className="row">
       {r.map(d => (
-        <div className="cal-span" style={style}>
+        <div className="cal-span date" style={style}>
           <div>{d > 0 ? d : " "}</div>
           <div className="cost">{dict[d] ? "$" + dict[d] : ""}</div>
         </div>
@@ -62,6 +62,9 @@ const Calendar = props => {
   ));
   return (
     <div className="expenses-calendar">
+      {props.returnToHomePage ? (
+        <button onClick={props.returnToHomePage}>Return</button>
+      ) : null}
       <div className="row">
         {["S", "M", "T", "W", "T", "F", "S"].map(d => (
           <div className="cal-span day" style={dayStyle}>

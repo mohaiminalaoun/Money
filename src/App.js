@@ -119,6 +119,7 @@ class App extends React.Component {
           ) : null}
           <Calendar
             width={window.screen.width < 800 ? window.screen.width / 7 : null}
+            returnToHomePage={this.returnToHomePage}
           />
         </>
       );
