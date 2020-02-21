@@ -1,6 +1,9 @@
 import React from "react";
+import { useState } from "react";
 import "./ConfirmationPage.scss";
 const ConfirmationPage = props => {
+  const [isDisabled, setIsDisabled] = useState(true);
+  const [title, setTitle] = useState("");
   const widthStyle =
     window.screen.width < 600
       ? { width: window.screen.width - 40 + "px" }
@@ -19,7 +22,20 @@ const ConfirmationPage = props => {
       </div>
       <div className="row">
         Expense title
-        <input className="input" placeholder="Chopotle Lunch"></input>
+        <input
+          className="input"
+          placeholder="Chopotle Lunch"
+          value={title}
+          onChange={e => {
+            let val = e.target.value;
+            setTitle(e.target.value);
+            if (val.trim().length > 0) {
+              setIsDisabled(false);
+            } else {
+              setIsDisabled(true);
+            }
+          }}
+        ></input>
       </div>
 
       <div className="btn-container">
@@ -31,9 +47,9 @@ const ConfirmationPage = props => {
           Cancel
         </div>
         <div
-          className="btn confirm"
+          className={"btn confirm" + (isDisabled ? " disabled" : "")}
           style={btnWidthStyle}
-          onClick={props.returnToHomePage}
+          onClick={isDisabled ? null : props.returnToHomePage}
         >
           Confirm
         </div>

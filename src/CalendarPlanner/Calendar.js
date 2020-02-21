@@ -28,6 +28,7 @@ const populateDictionary = arr => {
       dict[d[0]] += d[1];
     }
   });
+  console.log(dict);
   return dict;
 };
 
@@ -35,7 +36,8 @@ const Calendar = props => {
   let expenses = props.expenses || [
     { date: "02/14/2020", amount: "$146.4" },
     { date: "02/17/2020", amount: "$16.84" },
-    { date: "02/17/2020", amount: "$14.84" }
+    { date: "02/17/2020", amount: "$14.84" },
+    { date: "02/19/2020", amount: "$-19.64" }
   ];
   let arr = getDatesFromCurrentMonth(expenses);
   let dict = populateDictionary(arr);
@@ -53,9 +55,14 @@ const Calendar = props => {
   let rows = Month.map(r => (
     <div className="row">
       {r.map(d => (
-        <div className="cal-span date" style={style}>
+        <div
+          className={"cal-span date" + (d > 0 ? "" : " empty")}
+          style={style}
+        >
           <div>{d > 0 ? d : " "}</div>
-          <div className="cost">{dict[d] ? "$" + dict[d] : ""}</div>
+          <div className={"cost" + (dict[d] > 0 ? " positive" : " negative")}>
+            {dict[d] ? "$" + dict[d] : ""}
+          </div>
         </div>
       ))}
     </div>

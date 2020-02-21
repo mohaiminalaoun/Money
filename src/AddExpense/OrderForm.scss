@@ -13,9 +13,11 @@
     }
     .tab-span {
       padding-bottom: 8px;
+      opacity: 0.4;
       &.selected {
         border-bottom: 4px solid;
         border-color: #24ce99;
+        opacity: 1;
       }
     }
   }
