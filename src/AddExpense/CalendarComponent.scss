@@ -18,22 +18,23 @@
   margin-left: 20px;
   max-width: 500px;
 
-  .frequency {
+  .frequency-ctr {
     font-family: Roboto;
     width: 100%;
     margin-bottom: 10px;
     cursor: pointer;
-    .onetime {
+    .frequency {
       padding: 20px;
-      box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3), 0 5px 8px rgba(0, 0, 0, 0.24);
+      box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1), 0 5px 8px rgba(0, 0, 0, 0.1);
       border: 1px solid lightgrey;
       border-radius: 12px;
+      &:hover {
+        box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3), 0 5px 8px rgba(0, 0, 0, 0.24);
+      }
+    }
+    .onetime {
     }
     .recurring {
-      padding: 20px;
-      box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3), 0 5px 8px rgba(0, 0, 0, 0.24);
-      border: 1px solid lightgrey;
-      border-radius: 12px;
       margin-top: 10px;
     }
     .selected {
