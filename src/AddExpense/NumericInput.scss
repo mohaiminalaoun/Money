@@ -12,10 +12,10 @@
     color: white;
     background-color: #a6261b;
     float: right;
-    margin-top: 20%;
+    margin-top: -50px;
     margin-right: 40px;
     line-height: 40px;
-    border-radius: 12px;
+    border-radius: 28px;
     padding: 4px;
     opacity: 0.8;
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3), 0 5px 8px rgba(0, 0, 0, 0.24);
@@ -46,7 +46,9 @@
   .keypad {
     position: absolute;
     bottom: 0px;
-    width: 90vw;
+    width: 100vw;
+    background-color: #efefef;
+    margin-left: -20px;
 
     .row {
       display: flex;

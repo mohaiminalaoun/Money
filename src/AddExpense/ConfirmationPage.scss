@@ -1,6 +1,7 @@
 .confirmation-page {
   width: 350px;
-  margin-left: 20px;
+  margin-left: auto;
+  margin-right: auto;
   box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.01), 0 3px 24px rgba(0, 0, 0, 0.3);
   .confirmation-container {
     padding-left: 20px;
@@ -40,6 +41,7 @@
     padding: 10px;
     margin-right: 20px;
     margin-bottom: 20px;
+    color: #000000b5;
   }
 
   .btn-container {
@@ -86,7 +88,7 @@
   .input {
     float: right;
     height: 36px;
-    width: 120px;
+    width: 110px;
     font-size: 13px;
     font-family: Roboto;
     border-radius: 4px;

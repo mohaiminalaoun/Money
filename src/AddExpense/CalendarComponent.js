@@ -21,8 +21,8 @@ const CalendarComponent = props => {
   let headerStyle = {
     width:
       window.screen.width > 700
-        ? window.screen.width / 4 - 20 + "px"
-        : window.screen.width - 55 + "px"
+        ? window.screen.width / 4 + "px"
+        : window.screen.width - 35 + "px"
   };
   console.log(headerStyle);
 
@@ -98,6 +98,11 @@ const CalendarComponent = props => {
         ) : (
           <InfiniteCalendar
             height={300}
+            width={
+              window.screen.width > 700
+                ? window.screen.width / 4
+                : window.screen.width - 35
+            }
             onSelect={date => {
               let dateStr = date.toLocaleDateString();
               datesObj = {};

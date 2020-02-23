@@ -15,8 +15,11 @@
   box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.01), 0 12px 24px rgba(0, 0, 0, 0.2) !important;
 }
 .calendarContainer {
-  margin-left: 20px;
   max-width: 500px;
+  > * {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   .frequency-ctr {
     font-family: Roboto;
@@ -49,6 +52,7 @@
   .cal-header {
     line-height: 50px;
     padding-left: 20px;
+    box-sizing: border-box;
     font-family: Roboto;
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2), 0 5px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 8px;

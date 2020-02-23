@@ -37,10 +37,13 @@ const NumericInput = props => {
         <div className="value">{amount}</div>
       </div>
       <div className="divider"></div>
-      <div className="nextBtn" onClick={submit}>
-        {">"}
-      </div>
+
       <div className="keypad">
+        {Number(amount) > 0 ? (
+          <div className="nextBtn" onClick={submit}>
+            {">"}
+          </div>
+        ) : null}
         <div className="row">
           {[1, 2, 3].map(num => {
             return (
