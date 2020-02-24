@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Money/static/css/main.1e904557.chunk.css",
-    "main.js": "/Money/static/js/main.cfdcd2cf.chunk.js",
-    "main.js.map": "/Money/static/js/main.cfdcd2cf.chunk.js.map",
+    "main.css": "/Money/static/css/main.0162a4ca.chunk.css",
+    "main.js": "/Money/static/js/main.20124bc8.chunk.js",
+    "main.js.map": "/Money/static/js/main.20124bc8.chunk.js.map",
     "runtime-main.js": "/Money/static/js/runtime-main.e1de22e0.js",
     "runtime-main.js.map": "/Money/static/js/runtime-main.e1de22e0.js.map",
     "static/css/2.78f95891.chunk.css": "/Money/static/css/2.78f95891.chunk.css",
-    "static/js/2.61d0ddfd.chunk.js": "/Money/static/js/2.61d0ddfd.chunk.js",
-    "static/js/2.61d0ddfd.chunk.js.map": "/Money/static/js/2.61d0ddfd.chunk.js.map",
+    "static/js/2.cbe67518.chunk.js": "/Money/static/js/2.cbe67518.chunk.js",
+    "static/js/2.cbe67518.chunk.js.map": "/Money/static/js/2.cbe67518.chunk.js.map",
     "index.html": "/Money/index.html",
-    "precache-manifest.b4c9cf70ea2bce6ca05aade3974d2849.js": "/Money/precache-manifest.b4c9cf70ea2bce6ca05aade3974d2849.js",
+    "precache-manifest.2d9aa70ad00090b37fde042e47457a6f.js": "/Money/precache-manifest.2d9aa70ad00090b37fde042e47457a6f.js",
     "service-worker.js": "/Money/service-worker.js",
     "static/css/2.78f95891.chunk.css.map": "/Money/static/css/2.78f95891.chunk.css.map",
-    "static/css/main.1e904557.chunk.css.map": "/Money/static/css/main.1e904557.chunk.css.map",
-    "static/js/2.61d0ddfd.chunk.js.LICENSE.txt": "/Money/static/js/2.61d0ddfd.chunk.js.LICENSE.txt",
+    "static/css/main.0162a4ca.chunk.css.map": "/Money/static/css/main.0162a4ca.chunk.css.map",
+    "static/js/2.cbe67518.chunk.js.LICENSE.txt": "/Money/static/js/2.cbe67518.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/Money/static/media/Roboto-Thin.14147ca3.ttf",
     "static/media/back.svg": "/Money/static/media/back.f41441d7.svg",
     "static/media/backspace.svg": "/Money/static/media/backspace.0e1d7d58.svg",
@@ -21,14 +21,15 @@
     "static/media/confirm.svg": "/Money/static/media/confirm.7815fcb3.svg",
     "static/media/google-icon-2.svg": "/Money/static/media/google-icon-2.6c7f3dc2.svg",
     "static/media/google-icon.svg": "/Money/static/media/google-icon.ec85f944.svg",
+    "static/media/left-arrow.svg": "/Money/static/media/left-arrow.9e3dc787.svg",
     "static/media/more.svg": "/Money/static/media/more.478c67c0.svg",
     "static/media/price.svg": "/Money/static/media/price.d7adac28.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.e1de22e0.js",
     "static/css/2.78f95891.chunk.css",
-    "static/js/2.61d0ddfd.chunk.js",
-    "static/css/main.1e904557.chunk.css",
-    "static/js/main.cfdcd2cf.chunk.js"
+    "static/js/2.cbe67518.chunk.js",
+    "static/css/main.0162a4ca.chunk.css",
+    "static/js/main.20124bc8.chunk.js"
   ]
 }
