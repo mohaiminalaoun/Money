@@ -2,6 +2,33 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  .left-arrow {
+    height: 15px;
+  }
+  .back-ctr {
+    padding-left: 12px;
+    margin: 8px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    &:hover {
+      opacity: 0.7;
+      cursor: pointer;
+      .returnBtn {
+        color: black;
+      }
+    }
+    .returnBtn {
+      color: #6772e5;
+      font-family: Roboto;
+      padding: 8px;
+      width: fit-contents;
+      display: inline-block;
+      cursor: pointer;
+      &:hover {
+        color: black;
+      }
+    }
+  }
+
   .row {
     display: flex;
     .cost {
@@ -58,6 +85,13 @@
     border-radius: 8px;
     min-width: 100px;
     margin: 10px;
+  }
+  .month-header {
+    background-color: #fbf7ef;
+    padding: 4px;
+    text-align: center;
+    font-family: Roboto;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
   }
 }
 

@@ -1,5 +1,6 @@
 import React from "react";
-import { getMonth } from "./CalendarPlanner.js";
+import { getMonth, getMonthName } from "./CalendarPlanner.js";
+import leftArrow from "../assets/left-arrow.svg";
 import "./Calendar.scss";
 
 // function to get dates from the current month that exist in the expenses list
@@ -70,8 +71,14 @@ const Calendar = props => {
   return (
     <div className="expenses-calendar">
       {props.returnToHomePage ? (
-        <button onClick={props.returnToHomePage}>Return</button>
+        <div className="back-ctr" onClick={props.returnToHomePage}>
+          <img className="left-arrow" src={leftArrow} />
+          <div className="returnBtn" onClick={props.returnToHomePage}>
+            Return
+          </div>
+        </div>
       ) : null}
+      <div className="month-header">{getMonthName()}</div>
       <div className="row">
         {["S", "M", "T", "W", "T", "F", "S"].map(d => (
           <div className="cal-span day" style={dayStyle}>

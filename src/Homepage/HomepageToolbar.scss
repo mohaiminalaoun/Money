@@ -13,6 +13,7 @@
     cursor: pointer;
     width: 80px;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
     .price {
       height: 20px;
       padding: 10px;
@@ -28,19 +29,25 @@
     &.red {
       background-color: rgba(166, 38, 27, 1);
       &:hover {
-        background-color: rgba(166, 38, 27, 0.7);
+        //background-color: rgba(166, 38, 27, 0.7);
+        transform: translate(0px, -4px);
+        transition-duration: 400ms;
       }
     }
     &.yellow {
       background-color: rgba(237, 184, 97, 1);
       &:hover {
-        background-color: rgba(237, 184, 97, 0.7);
+        //background-color: rgba(237, 184, 97, 0.7);
+        transform: translate(0px, -4px);
+        transition-duration: 400ms;
       }
     }
     &.green {
       background-color: rgba(99, 162, 95, 1);
       &:hover {
-        background-color: rgba(99, 162, 95, 0.7);
+        //background-color: rgba(99, 162, 95, 0.7);
+        transform: translate(0px, -4px);
+        transition-duration: 400ms;
       }
     }
   }

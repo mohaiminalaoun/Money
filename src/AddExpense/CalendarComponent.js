@@ -73,7 +73,7 @@ const CalendarComponent = props => {
           </div>
         ) : null}
 
-        {isRecurring ? (
+        {isRecurring || window.screen.width < 700 ? (
           <InfiniteCalendar
             Component={withMultipleDates(Calendar)}
             interpolateSelection={defaultMultipleDateInterpolation}

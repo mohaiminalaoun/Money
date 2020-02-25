@@ -6,6 +6,7 @@
 .App {
   text-align: center;
   background-color: #fbf7ef;
+  background-image: linear-gradient(125deg, #fbf7ef, #fdeecf);
   height: 100vh;
   width: 100vw;
   overflow: hidden; // don't want it scrollable
@@ -30,7 +31,7 @@
   }
 
   .savings-animation {
-    padding-top: 20vh;
+    padding-top: 15vh;
     padding-bottom: 5vh;
   }
   .login-container {

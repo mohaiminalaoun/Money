@@ -74,3 +74,23 @@ export const getMonth = () => {
   console.log(Month);
   return Month;
 };
+
+export const getMonthName = () => {
+  const MonthNames = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ];
+  let today = new Date(),
+    monthIdx = today.getMonth();
+  return MonthNames[monthIdx];
+};

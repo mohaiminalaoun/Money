@@ -4,7 +4,9 @@
   padding-top: 20px;
   .stocks-container {
     //  width: 275px;
-    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.01), 0 3px 24px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.01), 0 3px 24px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    max-width: 70vw; // applies for mobile
 
     .header {
       height: 52px;

@@ -13,6 +13,68 @@ const StocksComponent = () => {
       .then(res => {
         console.log("second then");
         setData(res);
+      })
+      .catch(e => {
+        // no internet or using mock data
+        const mock = [
+          {
+            id: 107,
+            ticker: "CMA.WS",
+            name: "Comerica Incorporated",
+            price: "$135.78",
+            change: -0.16
+          },
+          {
+            id: 108,
+            ticker: "HPF",
+            name: "John Hancock Pfd Income Fund II",
+            price: "$248.14",
+            change: 9.3
+          },
+          {
+            id: 109,
+            ticker: "FYC",
+            name: "First Trust Small Cap Growth AlphaDEX Fund",
+            price: "$117.98",
+            change: -7.38
+          },
+          {
+            id: 110,
+            ticker: "XYL",
+            name: "Xylem Inc.",
+            price: "$217.87",
+            change: -2.57
+          },
+          {
+            id: 111,
+            ticker: "MPW",
+            name: "Medical Properties Trust, Inc.",
+            price: "$196.45",
+            change: 4.17
+          },
+          {
+            id: 112,
+            ticker: "EYESW",
+            name: "Second Sight Medical Products, Inc.",
+            price: "$159.66",
+            change: -5.79
+          },
+          {
+            id: 113,
+            ticker: "FNF",
+            name: "Fidelity National Financial, Inc.",
+            price: "$34.47",
+            change: -5.79
+          },
+          {
+            id: 114,
+            ticker: "ETM",
+            name: "Entercom Communications Corporation",
+            price: "$2.54",
+            change: 1.44
+          }
+        ];
+        setData(mock);
       });
   }, []);
   return (
