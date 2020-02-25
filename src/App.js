@@ -93,15 +93,17 @@ class App extends React.Component {
     } else if (this.state.stocks) {
       return (
         <>
-          <div className="homepage">
-            <HomepageHeader />
-            <HomepageToolbar
-              goToAddExpensePg={this.goToAddExpensePg}
-              goToStocks={this.goToStocks}
-              goToCalendar={this.goToCalendar}
-            />
-          </div>
-          <StocksComponent />
+          {window.screen.width > 800 ? (
+            <div className="homepage">
+              <HomepageHeader />
+              <HomepageToolbar
+                goToAddExpensePg={this.goToAddExpensePg}
+                goToStocks={this.goToStocks}
+                goToCalendar={this.goToCalendar}
+              />
+            </div>
+          ) : null}
+          <StocksComponent returnToHomePage={this.returnToHomePage} />
         </>
       );
     } else if (this.state.calendar) {

@@ -1,6 +1,6 @@
 import React from "react";
 import { getMonth, getMonthName } from "./CalendarPlanner.js";
-import leftArrow from "../assets/left-arrow.svg";
+import BackToHome from "../ToolbarComponents/BackToHome";
 import "./Calendar.scss";
 
 // function to get dates from the current month that exist in the expenses list
@@ -71,12 +71,7 @@ const Calendar = props => {
   return (
     <div className="expenses-calendar">
       {props.returnToHomePage ? (
-        <div className="back-ctr" onClick={props.returnToHomePage}>
-          <img className="left-arrow" src={leftArrow} />
-          <div className="returnBtn" onClick={props.returnToHomePage}>
-            Return
-          </div>
-        </div>
+        <BackToHome returnToHomePage={props.returnToHomePage} />
       ) : null}
       <div className="month-header">{getMonthName()}</div>
       <div className="row">

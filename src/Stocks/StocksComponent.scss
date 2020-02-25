@@ -6,7 +6,10 @@
     //  width: 275px;
     box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.01), 0 3px 24px rgba(0, 0, 0, 0.1);
     width: 300px;
-    max-width: 70vw; // applies for mobile
+    max-width: 75vw; // applies for mobile
+    max-height: 85vh;
+    overflow-y: scroll;
+    background-color: white;
 
     .header {
       height: 52px;

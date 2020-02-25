@@ -1,8 +1,9 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import BackToHome from "../ToolbarComponents/BackToHome";
 import "./StocksComponent.scss";
 
-const StocksComponent = () => {
+const StocksComponent = props => {
   const [data, setData] = useState(null);
   useEffect(() => {
     console.log("stocks component opened");
@@ -79,6 +80,7 @@ const StocksComponent = () => {
   }, []);
   return (
     <div className="stocks-component">
+      <BackToHome returnToHomePage={props.returnToHomePage} />
       <div className="stocks-container">
         <div className="header">Stocks</div>
         <div className="stocks-list">
