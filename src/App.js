@@ -7,7 +7,8 @@ import HomepageToolbar from "./Homepage/HomepageToolbar";
 import ExpensesGrid from "./Grids/ExpensesGrid";
 import AddExpense from "./AddExpense/AddExpense";
 import StocksComponent from "./Stocks/StocksComponent";
-import Calendar from "./CalendarPlanner/Calendar.js";
+import Calendar from "./CalendarPlanner/Calendar";
+import NewsArticle from "./NewsArticle/NewsArticle";
 
 class App extends React.Component {
   constructor(props) {
@@ -104,6 +105,7 @@ class App extends React.Component {
             </div>
           ) : null}
           <StocksComponent returnToHomePage={this.returnToHomePage} />
+          {window.screen.width > 800 ? <NewsArticle /> : null}
         </>
       );
     } else if (this.state.calendar) {

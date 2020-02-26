@@ -1,0 +1,31 @@
+.news-article-ctr {
+  max-height: 90vh;
+  overflow-y: hidden;
+  .article {
+    min-width: 200px;
+    max-width: 300px;
+    max-height: 200px;
+    border: 1px solid #e2e2e2;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-overflow: clip;
+    margin-top: 30px;
+    font-family: Liberation;
+    font-size: 11pt;
+  }
+}
+
+@font-face {
+  font-family: "Modern-sans";
+  src: local("Modern-sans"),
+    url(../fonts/ModernSans-Light.otf) format("opentype");
+}
+@font-face {
+  font-family: "Liberation";
+  src: local("Liberation"),
+    url(../fonts/LiberationSans-Regular.ttf) format("truetype");
+}
