@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/Money/static/css/main.59c6d4a1.chunk.css",
-    "main.js": "/Money/static/js/main.cca435a3.chunk.js",
-    "main.js.map": "/Money/static/js/main.cca435a3.chunk.js.map",
+    "main.css": "/Money/static/css/main.4032fcc1.chunk.css",
+    "main.js": "/Money/static/js/main.6b12d977.chunk.js",
+    "main.js.map": "/Money/static/js/main.6b12d977.chunk.js.map",
     "runtime-main.js": "/Money/static/js/runtime-main.e1de22e0.js",
     "runtime-main.js.map": "/Money/static/js/runtime-main.e1de22e0.js.map",
     "static/css/2.78f95891.chunk.css": "/Money/static/css/2.78f95891.chunk.css",
-    "static/js/2.cbe67518.chunk.js": "/Money/static/js/2.cbe67518.chunk.js",
-    "static/js/2.cbe67518.chunk.js.map": "/Money/static/js/2.cbe67518.chunk.js.map",
+    "static/js/2.405cd393.chunk.js": "/Money/static/js/2.405cd393.chunk.js",
+    "static/js/2.405cd393.chunk.js.map": "/Money/static/js/2.405cd393.chunk.js.map",
     "index.html": "/Money/index.html",
-    "precache-manifest.5146f613cdc8a6385a6de1a087ee64b6.js": "/Money/precache-manifest.5146f613cdc8a6385a6de1a087ee64b6.js",
+    "precache-manifest.07dc9e7065a039e4c82a00cc9e8561a1.js": "/Money/precache-manifest.07dc9e7065a039e4c82a00cc9e8561a1.js",
     "service-worker.js": "/Money/service-worker.js",
     "static/css/2.78f95891.chunk.css.map": "/Money/static/css/2.78f95891.chunk.css.map",
-    "static/css/main.59c6d4a1.chunk.css.map": "/Money/static/css/main.59c6d4a1.chunk.css.map",
-    "static/js/2.cbe67518.chunk.js.LICENSE.txt": "/Money/static/js/2.cbe67518.chunk.js.LICENSE.txt",
+    "static/css/main.4032fcc1.chunk.css.map": "/Money/static/css/main.4032fcc1.chunk.css.map",
+    "static/js/2.405cd393.chunk.js.LICENSE.txt": "/Money/static/js/2.405cd393.chunk.js.LICENSE.txt",
+    "static/media/NewsArticle.scss": "/Money/static/media/ModernSans-Light.719b1c92.otf",
     "static/media/App.scss": "/Money/static/media/Roboto-Thin.14147ca3.ttf",
     "static/media/back.svg": "/Money/static/media/back.f41441d7.svg",
     "static/media/backspace.svg": "/Money/static/media/backspace.0e1d7d58.svg",
@@ -28,8 +29,8 @@
   "entrypoints": [
     "static/js/runtime-main.e1de22e0.js",
     "static/css/2.78f95891.chunk.css",
-    "static/js/2.cbe67518.chunk.js",
-    "static/css/main.59c6d4a1.chunk.css",
-    "static/js/main.cca435a3.chunk.js"
+    "static/js/2.405cd393.chunk.js",
+    "static/css/main.4032fcc1.chunk.css",
+    "static/js/main.6b12d977.chunk.js"
   ]
 }

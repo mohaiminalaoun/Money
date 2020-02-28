@@ -1,31 +1,39 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0b7c7ca2b3d87c1949cc2523574ba1fe",
+    "revision": "2964e44f600500447f8b4e4dcbe4fae0",
     "url": "/Money/index.html"
   },
   {
-    "revision": "96155ccdacf630f8cd64",
+    "revision": "e15667bf3b2666ece11a",
     "url": "/Money/static/css/2.78f95891.chunk.css"
   },
   {
-    "revision": "63c474ba2f8f4b6a21c0",
-    "url": "/Money/static/css/main.59c6d4a1.chunk.css"
+    "revision": "89821efe2d5772617034",
+    "url": "/Money/static/css/main.4032fcc1.chunk.css"
   },
   {
-    "revision": "96155ccdacf630f8cd64",
-    "url": "/Money/static/js/2.cbe67518.chunk.js"
+    "revision": "e15667bf3b2666ece11a",
+    "url": "/Money/static/js/2.405cd393.chunk.js"
   },
   {
     "revision": "209d7f261911842216918882d1f3ddbc",
-    "url": "/Money/static/js/2.cbe67518.chunk.js.LICENSE.txt"
+    "url": "/Money/static/js/2.405cd393.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "63c474ba2f8f4b6a21c0",
-    "url": "/Money/static/js/main.cca435a3.chunk.js"
+    "revision": "89821efe2d5772617034",
+    "url": "/Money/static/js/main.6b12d977.chunk.js"
   },
   {
     "revision": "b7103c2e79809159de05",
     "url": "/Money/static/js/runtime-main.e1de22e0.js"
+  },
+  {
+    "revision": "bd513477436f5753bbe770da1ca1544c",
+    "url": "/Money/static/media/LiberationSans-Regular.bd513477.ttf"
+  },
+  {
+    "revision": "719b1c92bd89ce6c2001bddeb3b1dba5",
+    "url": "/Money/static/media/ModernSans-Light.719b1c92.otf"
   },
   {
     "revision": "9745415b8a2a8b9a2480a12f7e2d3ad3",
