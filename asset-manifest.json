@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Money/static/css/main.4032fcc1.chunk.css",
+    "main.css": "/Money/static/css/main.c72b70df.chunk.css",
     "main.js": "/Money/static/js/main.6b12d977.chunk.js",
     "main.js.map": "/Money/static/js/main.6b12d977.chunk.js.map",
     "runtime-main.js": "/Money/static/js/runtime-main.e1de22e0.js",
@@ -9,10 +9,10 @@
     "static/js/2.405cd393.chunk.js": "/Money/static/js/2.405cd393.chunk.js",
     "static/js/2.405cd393.chunk.js.map": "/Money/static/js/2.405cd393.chunk.js.map",
     "index.html": "/Money/index.html",
-    "precache-manifest.07dc9e7065a039e4c82a00cc9e8561a1.js": "/Money/precache-manifest.07dc9e7065a039e4c82a00cc9e8561a1.js",
+    "precache-manifest.57d2918a06c1dd9f815888bcf94e4d89.js": "/Money/precache-manifest.57d2918a06c1dd9f815888bcf94e4d89.js",
     "service-worker.js": "/Money/service-worker.js",
     "static/css/2.78f95891.chunk.css.map": "/Money/static/css/2.78f95891.chunk.css.map",
-    "static/css/main.4032fcc1.chunk.css.map": "/Money/static/css/main.4032fcc1.chunk.css.map",
+    "static/css/main.c72b70df.chunk.css.map": "/Money/static/css/main.c72b70df.chunk.css.map",
     "static/js/2.405cd393.chunk.js.LICENSE.txt": "/Money/static/js/2.405cd393.chunk.js.LICENSE.txt",
     "static/media/NewsArticle.scss": "/Money/static/media/ModernSans-Light.719b1c92.otf",
     "static/media/App.scss": "/Money/static/media/Roboto-Thin.14147ca3.ttf",
@@ -30,7 +30,7 @@
     "static/js/runtime-main.e1de22e0.js",
     "static/css/2.78f95891.chunk.css",
     "static/js/2.405cd393.chunk.js",
-    "static/css/main.4032fcc1.chunk.css",
+    "static/css/main.c72b70df.chunk.css",
     "static/js/main.6b12d977.chunk.js"
   ]
 }
