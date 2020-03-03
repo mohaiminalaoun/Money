@@ -17,7 +17,8 @@ class App extends React.Component {
       loggedin: false,
       homepage: false,
       stocks: false,
-      calendar: false
+      calendar: false,
+      showAllExpenses: false
     };
   }
   login = () => {
@@ -37,7 +38,8 @@ class App extends React.Component {
   returnToHomePage = () => {
     this.setState({
       homepage: true,
-      addExpensePage: false
+      addExpensePage: false,
+      showAllExpenses: false
     });
   };
 
@@ -59,20 +61,31 @@ class App extends React.Component {
       calendar: true
     });
   };
+  showExpenses = () => {
+    this.setState({
+      showAllExpenses: true
+    });
+  };
   render() {
     if (this.state.homepage) {
       console.log(1);
       return (
         <>
-          <div className="homepage">
-            <HomepageHeader />
-            <HomepageToolbar
-              goToAddExpensePg={this.goToAddExpensePg}
-              goToStocks={this.goToStocks}
-              goToCalendar={this.goToCalendar}
-            />
-          </div>
-          <ExpensesGrid />
+          {!this.state.showAllExpenses ? (
+            <div className="homepage">
+              <HomepageHeader />
+              <HomepageToolbar
+                goToAddExpensePg={this.goToAddExpensePg}
+                goToStocks={this.goToStocks}
+                goToCalendar={this.goToCalendar}
+              />
+            </div>
+          ) : null}
+          <ExpensesGrid
+            returnToHomePage={this.returnToHomePage}
+            isMobile={window.screen.width < 800}
+            showExpenses={this.showExpenses}
+          />
         </>
       );
     } else if (this.state.addExpensePage) {
@@ -122,7 +135,11 @@ class App extends React.Component {
             </div>
           ) : null}
           <Calendar
-            width={window.screen.width < 800 ? window.screen.width / 7 : null}
+            width={
+              window.screen.width < 800
+                ? window.screen.width / 7
+                : window.screen.width / 2.5
+            }
             returnToHomePage={this.returnToHomePage}
           />
         </>

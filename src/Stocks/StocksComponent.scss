@@ -33,6 +33,9 @@
         padding-right: 24px;
         font-family: Roboto;
         font-size: 13px;
+        &:hover {
+          background-color: #fbf7ef;
+        }
         .values {
           float: right;
           text-align: right;

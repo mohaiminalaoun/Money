@@ -16,7 +16,7 @@ const HomepageToolbar = props => {
       </div>
       <div onClick={props.goToCalendar} className="toolbar-menu green">
         <img className="price" alt="" src={more} />
-        More
+        Calendar
       </div>
     </div>
   );
